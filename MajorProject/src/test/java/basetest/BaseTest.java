@@ -25,9 +25,9 @@ public class BaseTest {
     public void setDriver() throws IOException {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        options.addArguments("--headless=new");
+        //options.addArguments("--headless=new");
         driver = new ChromeDriver(options);
-        FileReader file=new FileReader(".//src//test//resources//config.properties");
+        FileReader file=new FileReader("MajorProject/src/test/resources/config.properties");
         p=new Properties();
         p.load(file);
         logger = LogManager.getLogger(this.getClass());
